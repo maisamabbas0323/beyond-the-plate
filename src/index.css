@@ -1,0 +1,233 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-ink-950: #0a0a0c;
+  --color-ink-900: #0c0c0e;
+  --color-ink-850: #121214;
+  --color-ink-800: #17171a;
+  --color-ink-700: #232327;
+  --color-ink-600: #34343a;
+  --color-ink-500: #4b4b53;
+
+  --color-cream-50: #fbf9f2;
+  --color-cream-100: #f5efe1;
+  --color-cream-200: #ecdfc6;
+  --color-cream-300: #ddcba6;
+  --color-cream-400: #c4ad83;
+
+  --color-gold-100: #f9efcf;
+  --color-gold-200: #f2e0ab;
+  --color-gold-300: #e9cf84;
+  --color-gold-400: #d9b557;
+  --color-gold-500: #c39a2e;
+  --color-gold-600: #9c7a22;
+  --color-gold-700: #7a5f1c;
+
+  --color-flame-400: #e87a4a;
+  --color-flame-500: #d95f35;
+  --color-herb-400: #7fae6a;
+  --color-saffron-400: #d3a53c;
+
+  --shadow-card: 0 18px 44px -18px rgb(0 0 0 / 0.55);
+  --shadow-lift: 0 28px 70px -24px rgb(0 0 0 / 0.6);
+  --shadow-gold: 0 12px 40px -8px rgb(201 154 46 / 0.35);
+
+  --radius-4xl: 2rem;
+
+  --animate-marquee: marquee 42s linear infinite;
+  --animate-shimmer: shimmer 2.4s linear infinite;
+  --animate-float: float 7s ease-in-out infinite;
+  --animate-float-slow: float 11s ease-in-out infinite;
+  --animate-spin-slow: spin 24s linear infinite;
+  --animate-pulse-soft: pulse-soft 3.2s ease-in-out infinite;
+  --animate-glow: glow 4.5s ease-in-out infinite;
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  @keyframes shimmer {
+    from { background-position: 200% 0; }
+    to { background-position: -200% 0; }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+  }
+  @keyframes pulse-soft {
+    0%, 100% { opacity: 0.55; }
+    50% { opacity: 1; }
+  }
+  @keyframes glow {
+    0%, 100% { opacity: 0.5; transform: scale(1); }
+    50% { opacity: 0.9; transform: scale(1.06); }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 24px;
+  }
+
+  body {
+    @apply bg-ink-950 text-cream-100 font-sans antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    font-feature-settings: "cv11", "ss01";
+  }
+
+  /* Editorial typesetting: let the browser break headlines and body copy well */
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: var(--color-gold-500);
+    color: var(--color-ink-950);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-gold-400);
+    outline-offset: 3px;
+    border-radius: 8px;
+  }
+
+  /* A softer, unmistakable focus treatment for interactive elements */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible,
+  [tabindex]:focus-visible {
+    box-shadow: 0 0 0 4px rgb(217 181 87 / 0.16);
+  }
+
+  img {
+    user-select: none;
+  }
+
+  /* Refined scrollbar to match the matte aesthetic */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-ink-950);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-ink-600);
+    border-radius: 999px;
+    border: 2px solid var(--color-ink-950);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-ink-500);
+  }
+
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+}
+
+@layer components {
+  .glass {
+    background: linear-gradient(
+      135deg,
+      rgb(255 255 255 / 0.07),
+      rgb(255 255 255 / 0.02)
+    );
+    backdrop-filter: blur(18px) saturate(1.4);
+    -webkit-backdrop-filter: blur(18px) saturate(1.4);
+    border: 1px solid rgb(255 255 255 / 0.09);
+  }
+
+  .glass-strong {
+    background: linear-gradient(
+      140deg,
+      rgb(255 255 255 / 0.1),
+      rgb(255 255 255 / 0.03)
+    );
+    backdrop-filter: blur(28px) saturate(1.6);
+    -webkit-backdrop-filter: blur(28px) saturate(1.6);
+    border: 1px solid rgb(255 255 255 / 0.12);
+  }
+
+  .hairline {
+    border-color: rgb(255 255 255 / 0.08);
+  }
+
+  /* A barely-there top edge of light, so glass panels catch the eye like polished ceramic */
+  .glass-reflect {
+    box-shadow: inset 0 1px 0 0 rgb(255 255 255 / 0.1);
+  }
+
+  .text-gold-gradient {
+    background: linear-gradient(
+      105deg,
+      var(--color-gold-300) 0%,
+      var(--color-gold-400) 45%,
+      var(--color-gold-600) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .text-cream-gradient {
+    background: linear-gradient(180deg, #ffffff 0%, var(--color-cream-200) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .bg-noise {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+  }
+
+  .shimmer-bg {
+    background: linear-gradient(
+      100deg,
+      var(--color-ink-800) 40%,
+      var(--color-ink-700) 50%,
+      var(--color-ink-800) 60%
+    );
+    background-size: 200% 100%;
+  }
+
+  .skip-link {
+    @apply sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:rounded-full focus:bg-gold-400 focus:px-5 focus:py-2.5 focus:text-ink-950 focus:font-semibold focus:text-sm;
+  }
+
+  .no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
