@@ -2,13 +2,6 @@
   <img src="./public/logo.png" width="150" alt="Beyond The Plate Logo"/>
 </p>
 
-<!--
-  LOGO PLACEMENT
-  ──────────────
-  Drop your project logo at `public/logo.png` (a 1:1 square, ~150px display size, works best).
-  The repo currently ships `public/favicon.svg` and `public/icons.svg` — you can point the
-  <img> tag above at either of those until a dedicated logo.png exists.
--->
 
 <h1 align="center">Beyond The Plate</h1>
 
@@ -28,36 +21,6 @@
   <a href="https://recharts.org"><img src="https://img.shields.io/badge/Recharts-3.10-22B8CF?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBvbHlsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIgcG9pbnRzPSIxOCAyMCAxOCAxMCAxMiAxMCAxMiA2IDYgNiA2IDIwIDE4IDIwIi8+PC9zdmc+" alt="Recharts"/></a>
 </p>
 
-<p align="center">
-  <a href="https://github.com/maisamabbas0323/beyond-the-plate"><img src="https://img.shields.io/github/stars/maisamabbas0323/beyond-the-plate?style=for-the-badge&logo=github&logoColor=white&label=Stars" alt="GitHub Stars"/></a>
-  <a href="https://github.com/maisamabbas0323/beyond-the-plate"><img src="https://img.shields.io/github/forks/maisamabbas0323/beyond-the-plate?style=for-the-badge&logo=github&logoColor=white&label=Forks" alt="GitHub Forks"/></a>
-  <a href="https://github.com/maisamabbas0323/beyond-the-plate/issues"><img src="https://img.shields.io/github/issues/maisamabbas0323/beyond-the-plate?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Issues"/></a>
-  <a href="https://github.com/maisamabbas0323/beyond-the-plate/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen?style=for-the-badge&logo=github&logoColor=white" alt="PRs Welcome"/></a>
-  <a href="#license"><img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="MIT License"/></a>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Responsive-Yes-2ea44f?style=for-the-badge" alt="Responsive"/>
-  <img src="https://img.shields.io/badge/Accessibility-WCAG-6f42c1?style=for-the-badge" alt="Accessibility"/>
-  <img src="https://img.shields.io/badge/Open_Source-%E2%9D%A4-ff69b4?style=for-the-badge" alt="Open Source"/>
-</p>
-
-<p align="center">
-  <a href="#about">About</a> ·
-  <a href="#features">Features</a> ·
-  <a href="#screenshots">Screenshots</a> ·
-  <a href="#tech-stack">Tech Stack</a> ·
-  <a href="#folder-structure">Structure</a> ·
-  <a href="#installation">Installation</a> ·
-  <a href="#project-scripts">Scripts</a> ·
-  <a href="#environment-variables">Env</a> ·
-  <a href="#performance">Performance</a> ·
-  <a href="#accessibility">Accessibility</a> ·
-  <a href="#contributing">Contributing</a> ·
-  <a href="#license">License</a> ·
-  <a href="#author">Author</a>
-</p>
-
 ---
 
 ## About
@@ -68,11 +31,11 @@ Where a normal recipe site stops at ingredients and timers, *Beyond The Plate* a
 
 Every dish in the collection is fully documented with:
 
-- 📜 **History & significance** — where it was born and why it matters
-- 🌍 **Geography & culture** — the region, the people, the place
-- 🎉 **Festivals & tradition** — the ceremonies where food is the calendar
-- 🍲 **Authentic recipes** — step-by-step, with a live cooking timer
-- 🥗 **Full nutrition** — macros, vitamins, minerals, and a health score
+- **History & significance** — where it was born and why it matters
+- **Geography & culture** — the region, the people, the place
+- **Festivals & tradition** — the ceremonies where food is the calendar
+- **Authentic recipes** — step-by-step, with a live cooking timer
+- **Full nutrition** — macros, vitamins, minerals, and a health score
 
 > *"Every dish carries a history worth tasting. Geography, memory, family, and fire — served on a plate."*
 
@@ -82,52 +45,23 @@ Every dish in the collection is fully documented with:
 
 ## Features
 
-- [x] 🍜 **138 authentic world dishes** — every one fully documented
-- [x] 🌍 **49+ countries** — across six continents
-- [x] 🧭 **Interactive recipes** — step-by-step guide with live cooking timer
-- [x] 📊 **Nutrition dashboard** — macros, vitamins, minerals, health score
-- [x] 📖 **Editorial storytelling** — history, significance, tradition for every dish
-- [x] 🎎 **Culture exploration** — chapters and world festivals
-- [x] 🔍 **Search** — instant dish / country / name lookup
-- [x] 🏷️ **Filters** — by country and by tag
-- [x] 📱 **Responsive design** — 320px → 1920px, zero overflow
-- [x] 🖼️ **Gallery** — curated photography with lightbox
-- [x] 💎 **Glassmorphism UI** — glass surfaces, soft shadows, film-grain texture
-- [x] 🌑 **Dark premium interface** — gold, ink, and cream design system
-- [x] ✨ **Animations** — Framer Motion + GSAP
-- [x] 🌀 **Scroll effects** — Lenis smooth scroll, parallax, Ken Burns pans
-- [x] ♿ **Accessibility** — keyboard navigation, ARIA, reduced motion
-- [x] 🎯 **Modern design system** — tokens, keyframes, shared motion variants
+- [x]  **138 authentic world dishes** — every one fully documented
+- [x]  **49+ countries** — across six continents
+- [x]  **Interactive recipes** — step-by-step guide with live cooking timer
+- [x]  **Nutrition dashboard** — macros, vitamins, minerals, health score
+- [x]  **Editorial storytelling** — history, significance, tradition for every dish
+- [x]  **Culture exploration** — chapters and world festivals
+- [x]  **Search** — instant dish / country / name lookup
+- [x]  **Filters** — by country and by tag
+- [x]  **Responsive design** — 320px → 1920px, zero overflow
+- [x]  **Gallery** — curated photography with lightbox
+- [x]  **Glassmorphism UI** — glass surfaces, soft shadows, film-grain texture
+- [x]  **Dark premium interface** — gold, ink, and cream design system
+- [x]  **Animations** — Framer Motion + GSAP
+- [x]  **Scroll effects** — Lenis smooth scroll, parallax, Ken Burns pans
+- [x]  **Accessibility** — keyboard navigation, ARIA, reduced motion
+- [x]  **Modern design system** — tokens, keyframes, shared motion variants
 
----
-
-## Screenshots
-
-> Place screenshots in `docs/screenshots/` (a guide file lives there with the exact filenames).
-
-### Home
-![Home](docs/screenshots/home.png)
-
-### Discover
-![Discover](docs/screenshots/discover.png)
-
-### Dish Details
-![Dish Details](docs/screenshots/dish-details.png)
-
-### Recipes
-![Recipes](docs/screenshots/recipes.png)
-
-### Nutrition
-![Nutrition](docs/screenshots/nutrition.png)
-
-### Culture
-![Culture](docs/screenshots/culture.png)
-
-### Gallery
-![Gallery](docs/screenshots/gallery.png)
-
-### About
-![About](docs/screenshots/about.png)
 
 ---
 
@@ -271,35 +205,35 @@ The interface is engineered for a fluid, overflow-free experience at every size 
 
 ## Performance
 
-- ⚡ **Fast loading** — code-split production bundle, zero runtime dependencies on external CDNs
-- 🪜 **Lazy loading** — routes and heavy views load on demand
-- 🖼️ **Responsive images** — images sized and optimized for their container
-- 🎞️ **Optimized animations** — springs and transforms instead of layout thrash
-- 🎮 **GPU acceleration** — `transform`/`opacity`-only animations (GPU-friendly compositing)
-- 📦 **Minimal bundle** — tree-shaken dependencies via Vite + rolldown
+-  **Fast loading** — code-split production bundle, zero runtime dependencies on external CDNs
+-  **Lazy loading** — routes and heavy views load on demand
+-  **Responsive images** — images sized and optimized for their container
+-  **Optimized animations** — springs and transforms instead of layout thrash
+-  **GPU acceleration** — `transform`/`opacity`-only animations (GPU-friendly compositing)
+-  **Minimal bundle** — tree-shaken dependencies via Vite + rolldown
 
 ---
 
 ## Accessibility
 
-- 🧱 **Semantic HTML** — landmarks, headings, and native elements throughout
-- ⌨️ **Keyboard navigation** — every interactive element is reachable and operable
-- ♿ **ARIA** — roles, labels, `aria-current`, `aria-hidden`, and live tooltips
-- 🔲 **Focus states** — visible, consistent focus indicators
-- 🐢 **Reduced motion** — respects `prefers-reduced-motion`; animations degrade gracefully
-- 🔊 **Screen reader support** — descriptive alt text, labels, and meaningful link text
+-  **Semantic HTML** — landmarks, headings, and native elements throughout
+-  **Keyboard navigation** — every interactive element is reachable and operable
+-  **ARIA** — roles, labels, `aria-current`, `aria-hidden`, and live tooltips
+-  **Focus states** — visible, consistent focus indicators
+-  **Reduced motion** — respects `prefers-reduced-motion`; animations degrade gracefully
+-  **Screen reader support** — descriptive alt text, labels, and meaningful link text
 
 ---
 
 ## Design Philosophy
 
-- 🏛️ **Museum-inspired** — food presented like an exhibition, not a feed
-- ✍️ **Editorial typography** — type that reads like a well-set magazine
-- ⬜ **Minimalism** — only what serves the story survives the edit
-- 🪟 **Glassmorphism** — frosted surfaces over a living, breathing background
-- 🌫️ **Soft shadows** — depth without weight
-- 💫 **Premium interactions** — magnetic buttons, tilting cards, golden dust
-- 🧬 **Human storytelling** — data serves people, not the other way around
+-  **Museum-inspired** — food presented like an exhibition, not a feed
+-  **Editorial typography** — type that reads like a well-set magazine
+-  **Minimalism** — only what serves the story survives the edit
+-  **Glassmorphism** — frosted surfaces over a living, breathing background
+-  **Soft shadows** — depth without weight
+-  **Premium interactions** — magnetic buttons, tilting cards, golden dust
+-  **Human storytelling** — data serves people, not the other way around
 
 ---
 
@@ -320,14 +254,14 @@ The interface is engineered for a fluid, overflow-free experience at every size 
 
 ## Future Roadmap
 
-- [ ] 📱 **PWA** — installable, app-like experience
-- [ ] 📴 **Offline mode** — the museum travels with you
-- [ ] 🌐 **Multi-language** — local names and stories in every tongue
-- [ ] 🗺️ **More countries** — past 49, toward the whole world
-- [ ] 👤 **User collections** — curate your own plates
-- [ ] ⭐ **Favorites** — save the dishes you love
-- [ ] 🤖 **AI food recommendations** — taste, match, suggest
-- [ ] 🗺️ **Interactive maps** — plot every dish on the globe
+- [ ]  **PWA** — installable, app-like experience
+- [ ]  **Offline mode** — the museum travels with you
+- [ ]  **Multi-language** — local names and stories in every tongue
+- [ ]  **More countries** — past 49, toward the whole world
+- [ ]  **User collections** — curate your own plates
+- [ ]  **Favorites** — save the dishes you love
+- [ ]  **AI food recommendations** — taste, match, suggest
+- [ ]  **Interactive maps** — plot every dish on the globe
 
 ---
 
